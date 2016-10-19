@@ -1,0 +1,22 @@
+{
+  "name": "redbook",
+  "version": "0.1.0",
+  "description": "mysql orm",
+  "main": "lib/redbook",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachmanzz/redBook.git"
+  },
+  "keywords": [
+    "mysql"
+  ],
+  "author": "Muhammad Abdurrahman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rachmanzz/redBook/issues"
+  },
+  "homepage": "https://github.com/rachmanzz/redBook#readme"
+}
