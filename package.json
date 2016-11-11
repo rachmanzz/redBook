@@ -13,6 +13,9 @@
   "keywords": [
     "mysql"
   ],
+  "dependencies":{
+	"mysql": "^2.11.1"
+  },
   "author": "Muhammad Abdurrahman",
   "license": "MIT",
   "bugs": {
