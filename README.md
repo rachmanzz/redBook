@@ -8,5 +8,5 @@ RedBook is mysql helper. redBook make script a simple and easy to use
         host     : 'localhost',
         user     : 'root',
         password : '',
-        database : 'petualang'
+        database : 'dbname'
     };
