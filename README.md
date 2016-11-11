@@ -27,3 +27,13 @@ RedBook is mysql helper. redBook make script a simple and easy to use
   Inset Table
   
     new redBook(resInf).table('users').insert({name:'myname',groupID: 1});
+
+  Update
+  
+    new redBook(resInf).table('users').updateRaw('gamestart=? WHERE groupID=?',['yes',1]);
+    
+  Delete
+  
+    new redBook(resInf).table('users').where('groupID',chatid).delete();
+    
+    
