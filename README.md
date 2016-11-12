@@ -35,5 +35,14 @@ RedBook is mysql helper. redBook make script a simple and easy to use
   Delete
   
     new redBook(resInf).table('users').where('groupID',chatid).delete();
+
+
+# Other function
+
+    orWhere(key,data);  |  orWhere(key,operator,data);
+    orderBy(data);   | orderBy(data,sort);
+    operator(query); | exp : operator('LIKE "s%"');
+
+
     
     
