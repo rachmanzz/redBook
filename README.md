@@ -34,7 +34,28 @@ RedBook is mysql helper. redBook make script a simple and easy to use
     
   Delete
   
-    new redBook(resInf).table('users').where('groupID',chatid).delete();
+    new redBook(resInf).table('users').where('groupID',1).delete();
+    
+  Other Operator
+    
+    new redBook(resInf).table('users').where('groupID',1).operator('AND WHERE city LIKE "s%"')getRow(function (err,users) {
+        // row result
+    });
+    
+  Join
+    
+    new redBook(resInf).table('users').innerJoin('group','users.id = group.userid').where('group.id',2)
+    .select('group.*, SUM(group.user) AS maxUser').getRow(function (err,users){
+        // row result
+    });
+    
+  | join |
+  |--|
+  | .innerJoin |
+  | .leftJoin |
+  | .innerJoin |
+  | .fullJoin |
+    
 
 
 # Other function
