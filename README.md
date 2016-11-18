@@ -44,25 +44,15 @@ RedBook is mysql helper. redBook make script a simple and easy to use
     
   Join
     
-    new redBook(resInf).table('users').innerJoin('group','users.id = group.userid').where('group.id',2)
+    new redBook(resInf).table('users').innerJoin('group','users.id = group.userid').where('users.money','>=',2000)
     .select('group.*, SUM(group.user) AS maxUser').getRow(function (err,users){
         // row result
     });
-    
-  | join |
-  |--|
-  | .innerJoin |
-  | .leftJoin |
-  | .innerJoin |
-  | .fullJoin |
-    
-
 
 # Other function
 
-    orWhere(key,data);  |  orWhere(key,operator,data);
-    orderBy(data);   | orderBy(data,sort);
-    operator(query); | exp : operator('LIKE "s%"');
+    orWhere, orderBy, leftJoin,  rightJoin, fullJoin
+    
 
 
     
