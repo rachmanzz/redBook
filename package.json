@@ -1,6 +1,6 @@
 {
   "name": "redbook",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "mysql orm",
   "main": "lib/redbook.js",
   "scripts": {
